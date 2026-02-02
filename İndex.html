@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Akçay Ahşap | Personel Paneli</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="login-screen">
+    <h2>Giriş Yap</h2>
+    <input id="username" placeholder="Kullanıcı adı" />
+    <input id="password" type="password" placeholder="Şifre" />
+    <button onclick="login()">Giriş</button>
+    <p id="login-error"></p>
+  </div>
+
+  <div id="app" style="display:none;">
+    <h1>Personeller</h1>
+    <button onclick="logout()">Çıkış</button>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Ad Soyad</th>
+          <th>Telefon</th>
+          <th>Yevmiye</th>
+          <th>Aktif</th>
+        </tr>
+      </thead>
+      <tbody id="employee-list"></tbody>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
